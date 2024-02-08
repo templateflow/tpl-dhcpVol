@@ -4,6 +4,7 @@ import json
 import os
 import shutil
 from glob import glob
+from pathlib import Path
 
 import nibabel as nb
 import numpy as np
@@ -284,4 +285,4 @@ if __name__ == "__main__":
     for root, _, files in os.walk(out_dir):
         for fname in files:
             if fname.endswith(".nii.gz"):
-                sanitize(os.path.join(root, fname))
+                sanitize(Path(os.path.join(root, fname)))
