@@ -5,7 +5,7 @@
 name: Sync with G-Node, update Superdataset and export to S3
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   update_superdataset:
